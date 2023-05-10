@@ -1,0 +1,14 @@
+<mat-toolbar>
+
+    <button mat-icon-button class="example-icon" mat-button (click)="sidenav.toggle()" aria-label="Example icon button with a menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="text-center">College community</span>
+
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side">
+        <a routerLink="add">Add product</a>
+    </mat-sidenav>
+
+    <mat-sidenav-content>

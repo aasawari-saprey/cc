@@ -1,0 +1,103 @@
+<mat-toolbar>
+
+    <button mat-icon-button class="example-icon" aria-label="Example icon button with a menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="text-center">College community</span>
+
+</mat-toolbar>
+
+
+
+
+<!-- <body>
+            <div class="login-root">
+                <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+                    <div class="loginbackground box-background--white padding-top--64">
+                        <div class="loginbackground-gridContainer">
+                            <div class="box-root flex-flex" style="grid-area: top / start / 8 / end;">
+                                <div class="box-root" style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
+                                </div>
+                            </div>
+                            <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
+                                <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+                            </div>
+                            <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
+                                <div class="box-root box-background--blue800" style="flex-grow: 1;"></div>
+                            </div>
+                            <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
+                                <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;"></div>
+                            </div>
+                            <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
+                                <div class="box-root box-background--gray100 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+                            </div>
+                            <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
+                                <div class="box-root box-background--cyan200 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+                            </div>
+                            <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
+                                <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;"></div>
+                            </div>
+                            <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
+                                <div class="box-root box-background--gray100 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+                            </div>
+                            <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
+                                <div class="box-root box-divider--light-all-2 animationRightLeft tans3s" style="flex-grow: 1;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+                        <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+                            <h1><a href="http://blog.stackfindover.com/" rel="dofollow">College Community</a></h1>
+                        </div>
+                        <div class="formbg-outer">
+                            <div class="formbg">
+                                <div class="formbg-inner padding-horizontal--48">
+                                    <form id="stripe-login">
+                                        <div class="field padding-bottom--24">
+                                            <label for="name">Enter product name</label>
+                                            <input type="text" name="name" [(ngModel)]="name">
+                                        </div>
+                                        <div class="field padding-bottom--24">
+                                            <label for="productprice">Enter product price</label>
+                                            <input type="text" name="price" [(ngModel)]="price">
+                                        </div> -->
+<!-- <div class="field padding-bottom--24">
+                                            <label for="productname">Enter product category</label>
+                                            <select id="inputState" class="form-control" name="selectedValue" [(ngModel)]="selectedValue">
+                                                <option selected value="Books">Books</option>
+                                                <option value="Engineering Tools">Engineering Tools</option>
+                                                <option value="Uniform">Uniform</option>
+                                                <option value="Project">Project</option>
+                                              </select>
+
+                                        </div>-->
+<!-- <div class="field padding-bottom--24">
+                                            <label for="productdesc">Enter product description</label>
+                                            <input type="text" name="description" [(ngModel)]="description">
+
+                                        </div>
+                                        <div class="field padding-bottom--24">
+                                            <label for="name">Upload image</label>
+                                            <input type="text" name="image" [(ngModel)]="image">
+                                        </div>
+                                        <div class="field padding-bottom--24">
+                                            <button type="submit" name="submit" value="Add Product">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div> -->
+<div class="add-product">
+    <h1>Add New Product</h1>
+    <p class="message-p">{{addProductMessage}}</p>
+    <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
+        <input type="text" class="form-input" placeholder="Enter Product Name" name="name" ngModel />
+        <input type="text" class="form-input" placeholder="Enter Product Price" name="price" ngModel />
+        <input type="text" class="form-input" placeholder="Enter Product Category" name="category" ngModel />
+        <input type="text" class="form-input" placeholder="Enter Product Color" name="color" ngModel />
+        <textarea type="text" class="form-input" placeholder="Enter Product Description" name="description" ngModel></textarea>
+
+        <input type="text" class="form-input" placeholder="Enter Product Image URL" name="image" ngModel />
+        <button class="form-button">Add Product</button>
+
+    </form>
+</div>
